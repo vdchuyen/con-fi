@@ -12,7 +12,7 @@ RUN yum update -y && yum upgrade -y
 RUN yum install -y epel-release
 RUN yum install -y python36 python36-devel \
                    python36-pip postgresql-devel \
-                   gcc nginx
+                   gcc nginx zlib-devel libjpeg-devel
 RUN yum install -y vim
 
 RUN mkdir -p /run/nginx
